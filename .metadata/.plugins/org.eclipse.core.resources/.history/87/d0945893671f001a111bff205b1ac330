@@ -1,0 +1,29 @@
+package LanguageBasics;
+
+public class Operators {
+     static int c=100;
+	public static void main(String[] args) {
+		int a=10;
+		int b=20;
+		c=++c;
+		//accessing static variable 
+		 System.out.println(c);
+		 staticCall();
+		
+		// ArithmeticOperator
+		System.out.println("a+b " +(a+b));
+		System.out.println("a-b " +(a-b));
+		System.out.println("a*b " +(a*b));
+		System.out.println("a/b " +(a/b) +" & b/a " +(b/a));
+		System.out.println("a%b " +(a%b));
+		//UnaryOperator
+		System.out.println("increment ++a " +(++a));
+		System.out.println("decrement --b " +(--b));
+
+	}
+	public static void staticCall(){
+		
+		System.out.println("instatic method" +c);
+	}
+
+}

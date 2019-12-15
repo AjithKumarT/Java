@@ -1,0 +1,20 @@
+package LanguageBasics;
+
+public class Operators {
+
+	public static void main(String[] args) {
+		int a=10;
+		int b=20;
+		// ArithmeticOperator
+		System.out.println("a+b " +(a+b));
+		System.out.println("a-b " +(a-b));
+		System.out.println("a*b " +(a*b));
+		System.out.println("a/b " +(a/b) +" & b/a " +(b/a));
+		System.out.println("a%b " +(a%b));
+		//UnaryOperator
+		System.out.println("increment ++a " +(++a));
+		System.out.println("decrement --b " +(--b));
+
+	}
+
+}
