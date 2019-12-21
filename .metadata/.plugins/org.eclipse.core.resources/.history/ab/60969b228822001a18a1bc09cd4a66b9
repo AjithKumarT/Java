@@ -1,0 +1,39 @@
+package LanguageBasics;
+
+import java.util.Arrays;
+
+public class ArraysSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[]={9,3,10,2,5,5};
+		int d[]=a;
+		Arrays.sort(a);
+		int c=0;
+		for(int b:a){
+			c+=b;
+			System.out.print(b+" ");
+		}
+System.out.println("sum is "+c);
+System.out.println("min no. "+a[0]);
+System.out.println("max is "+a[a.length-1]);
+
+	//conventional method sort
+System.out.println("conventional method");
+int max=0;
+   for(int i=0;i<d.length;i++){
+	   for(int j=i+1; j<d.length;j++){
+		   if(d[i]>d[j]){
+			   int temp=d[j];
+			   d[j]=d[i];
+			   d[i]=temp;
+		   }
+	   }
+   }
+   for(int b:a){
+	   System.out.print(b+" ");
+   }
+   
+	}
+
+}
