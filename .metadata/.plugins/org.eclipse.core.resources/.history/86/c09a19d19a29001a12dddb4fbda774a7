@@ -1,0 +1,29 @@
+package Oops.InheritencePrograms;
+
+public class SuperEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Child c=new Child(10);
+		
+
+	}
+
+}
+class Parent{
+	int n;
+	Parent(){
+		System.out.println("Parent ");
+	}
+	Parent(int n){
+		 this.n=n;
+		System.out.println("Parent constructor arg value is "+n);
+	}
+}
+class Child extends Parent{
+
+	 Child(int i) {
+       
+	 }
+	
+}

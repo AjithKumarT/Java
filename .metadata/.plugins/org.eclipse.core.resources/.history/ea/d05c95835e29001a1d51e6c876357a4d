@@ -1,0 +1,29 @@
+package Oops;
+
+public class Inheritence {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A a=new B();
+		a.m=10;
+		a.n=20;
+		a.show();
+		((B)a).a1=10;
+		 a.show();
+		
+
+	}
+
+}
+class A{
+	int m,n;
+	public void show(){
+		System.out.println("m+n in A "+(m+n));
+	}
+}
+class B extends A{
+	int a1;
+	public void show(){
+		System.out.println("a+m+n in B "+(a1+m+n));
+	}
+}

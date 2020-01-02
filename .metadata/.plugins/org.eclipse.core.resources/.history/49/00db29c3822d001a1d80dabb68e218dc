@@ -1,0 +1,13 @@
+package Oops.Garbagecollection;
+
+public class Garbage_Finalize {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Runtime rs= Runtime.getRuntime();
+		System.out.println("Before "+rs.freeMemory());
+		rs.gc();
+		System.out.println("After "+rs.freeMemory());
+	}
+
+}
